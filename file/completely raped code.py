@@ -8,9 +8,19 @@ def timeout_trackback():
     for loop in dataset:
         if dataset > 0:
             return loop
+
+def to_do():
+    dataset_todo = {
+        "data2" : 1
+        #should be a sql table 
+    }
+    for loop_dataset in dataset_todo:
+        if loop_dataset > 2:
+            return 0#something s                 
+
 #decides whetehr to call time_traceback() or other depenging on upload parameter
 def fucc():
-    threashold = 50
+    threashold = [0,50]
     time = 10
     for upload_time in range(time):
         for upload_threashold in threashold:
@@ -18,17 +28,27 @@ def fucc():
              return timeout_trackback()
          
          elif upload_threashold <= 10:
-             return function
+             return to_do()
 
          else:
              return "shit! there's" + time*0 + "time" + ":("
 
-for uploading in fucc():
+def fucn():
+ for uploading in fucc():
     if uploading < 1:
-        pass
-    elif uploading > 2:
-        return timeout_trackback()
-
+        slow_var = timeout_trackback()
+    elif uploading > 1:
+        fast_var = to_do()
     
+    else:
+        return "something" 
 
+
+uploader = fucc()
+
+
+
+#-*- assign a function -*- 
+
+import simple as lol
 print.mainloop() 
