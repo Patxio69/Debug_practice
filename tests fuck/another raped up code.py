@@ -44,10 +44,10 @@ val = input()
 def value():    #value provider for inter_n()
     userinput = input("write your value")
     value = ''
-    if userinput > 0:
-        value = userinput
+    if int(userinput) > 0:
+        value = str(userinput)
     else:
-        value = 0
+        (value) = 0
     
     return value
 
@@ -91,6 +91,3 @@ fuk_args1 = whatever(arg = inputuser)
 
 
 
-
-
- 

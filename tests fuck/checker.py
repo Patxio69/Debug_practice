@@ -1,7 +1,10 @@
 import json
 
+
+
+#playing with the value of 3 n
+
 #variable assignment room
-#int var
 
 saved_array = []
 start_with = "you have" + str(saved_array)
@@ -13,7 +16,7 @@ def value():
     value = 2
 
 #ing fucc
-def inter_n():    #test block 1
+def inter_n():    #test block 1 and this is a static func
     n = 0
     while True:
         print("enter value")
@@ -25,16 +28,34 @@ def inter_n():    #test block 1
     count_entry = input(int())
 
     if int(count_entry) > 0:
-        for looper in range(count_entry):
+        for looper in range(int(count_entry)):
             num = 0
-            while num == 10:
-                num = num + value
+            while num < 10:
+                num = num + num #Yeah I AGREE this looks really bad
+                num = num + value #I just can't fucking see how bad it looks
+                return "this is your result" + num
+                print("do you want to save them?")
+                response = input()
+                if response == "yes":
+                    array.append(num)
+                
+                elif response == "no":
+                    return "ok"
 
-    elif int(count_entry) == 0:
-        return "write somethign"
+    elif str(count_entry) == "later":
+        print("warning! The list might be empty")
 
+    print("checking the list!")
     n = len(array)
-    return n
+    if int(n) == 0:
+        return "it's empty"
+    elif int(n) > 0:
+        for something in range(int(n)):
+            for lol in array:
+                re_val = ["id" + str(something) + " list is" + str(lol)]
 
+def inter_n1(arg):
 
                  
+# fucktion interation down here
+
